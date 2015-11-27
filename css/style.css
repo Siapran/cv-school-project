@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: gray;
+    font-size: 1.5em;
+}
+
+em {
+    color: #A49A87;
+}
+
+.jumbotron {
+    position: relative;
+    margin-bottom: 0px;
+    background-color: #644D52;
+    color: white;
+    text-shadow: 1px 1px #332532;
+    box-shadow: 0 0 20px 0 black;
+    z-index: 20;
+}
+
+.jumbotron * {
+    text-align: right;
+}
+
+.jumbotron img {
+    box-shadow: 0 0 20px 0 #332532;
+}
+
+.category-section {
+    margin: 20px;
+    font-size: 1.2em;
+}
+
+.category {
+    font-size: 2em;
+    margin: 40px;
+    margin-left: -25px;
+    background-color: #FF974F;
+    color: white;
+    position: relative;
+    padding: 5px 15px 5px 60px;
+    text-align: right;
+    border-radius: 0 5px 5px 0;
+    text-shadow: 1px 1px #F77A52;
+    /*box-shadow: 1px -1px 0px 0px #F77A52;*/
+    box-shadow: 0 0 10px -2px #644D52;
+}
+
+.category::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    border-color: transparent #F77A52 #F77A52 transparent;
+    border-style: solid;
+    border-width: 5px;
+    width: 0;
+    height: 0;
+    z-index: -1;
+}
+
+:not(.jumbotron) > .container {
+    box-shadow: 0 0 10px 0 #332532;
+    padding-top:40px;
+    background-color: white;
+}
